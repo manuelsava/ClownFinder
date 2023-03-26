@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5117FEB29CF5A070024B3F2 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5117FEA29CF5A070024B3F2 /* MapAnnotationView.swift */; };
+		F51DB69329D04BD300756508 /* ClownGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51DB69229D04BD300756508 /* ClownGridViewModel.swift */; };
+		F51DB69529D0502F00756508 /* Clowns.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51DB69429D0502F00756508 /* Clowns.swift */; };
+		F51DB69729D06A3400756508 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51DB69629D06A3400756508 /* MapViewModel.swift */; };
+		F5DD5F2629CF082000B82FB9 /* ClownFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DD5F2529CF082000B82FB9 /* ClownFinderApp.swift */; };
+		F5DD5F2829CF082000B82FB9 /* ClownFinderTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DD5F2729CF082000B82FB9 /* ClownFinderTabView.swift */; };
+		F5DD5F2A29CF082000B82FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5DD5F2929CF082000B82FB9 /* Assets.xcassets */; };
+		F5DD5F2D29CF082000B82FB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5DD5F2C29CF082000B82FB9 /* Preview Assets.xcassets */; };
+		F5DD5F3729CF08EC00B82FB9 /* ClownListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DD5F3629CF08EC00B82FB9 /* ClownListView.swift */; };
+		F5DD5F3929CF08FF00B82FB9 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DD5F3829CF08FF00B82FB9 /* MapView.swift */; };
+		F5DD5F3E29CF0BB500B82FB9 /* Clown.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DD5F3D29CF0BB500B82FB9 /* Clown.swift */; };
+		F5DD5F4129CF156400B82FB9 /* ClownGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DD5F4029CF156400B82FB9 /* ClownGridView.swift */; };
+		F5DD5F4329CF1C2C00B82FB9 /* ClownFinderTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DD5F4229CF1C2C00B82FB9 /* ClownFinderTabViewModel.swift */; };
+		F5DD5F4529CF207500B82FB9 /* ClownDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DD5F4429CF207500B82FB9 /* ClownDetailView.swift */; };
+		F5DD5F4929CF279F00B82FB9 /* ClownService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DD5F4829CF279F00B82FB9 /* ClownService.swift */; };
+		F5DD5F4E29CF2C5500B82FB9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DD5F4D29CF2C5500B82FB9 /* NetworkManager.swift */; };
+		F5DD5F5129CF2D4800B82FB9 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DD5F5029CF2D4800B82FB9 /* APIError.swift */; };
+		F5DD5F5329CF372D00B82FB9 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DD5F5229CF372D00B82FB9 /* LoadingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F5117FEA29CF5A070024B3F2 /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
+		F51DB69229D04BD300756508 /* ClownGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClownGridViewModel.swift; sourceTree = "<group>"; };
+		F51DB69429D0502F00756508 /* Clowns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clowns.swift; sourceTree = "<group>"; };
+		F51DB69629D06A3400756508 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		F5DD5F2229CF082000B82FB9 /* ClownFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClownFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5DD5F2529CF082000B82FB9 /* ClownFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClownFinderApp.swift; sourceTree = "<group>"; };
+		F5DD5F2729CF082000B82FB9 /* ClownFinderTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClownFinderTabView.swift; sourceTree = "<group>"; };
+		F5DD5F2929CF082000B82FB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5DD5F2C29CF082000B82FB9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F5DD5F3629CF08EC00B82FB9 /* ClownListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClownListView.swift; sourceTree = "<group>"; };
+		F5DD5F3829CF08FF00B82FB9 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		F5DD5F3D29CF0BB500B82FB9 /* Clown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clown.swift; sourceTree = "<group>"; };
+		F5DD5F4029CF156400B82FB9 /* ClownGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClownGridView.swift; sourceTree = "<group>"; };
+		F5DD5F4229CF1C2C00B82FB9 /* ClownFinderTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClownFinderTabViewModel.swift; sourceTree = "<group>"; };
+		F5DD5F4429CF207500B82FB9 /* ClownDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClownDetailView.swift; sourceTree = "<group>"; };
+		F5DD5F4829CF279F00B82FB9 /* ClownService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClownService.swift; sourceTree = "<group>"; };
+		F5DD5F4D29CF2C5500B82FB9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F5DD5F5029CF2D4800B82FB9 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		F5DD5F5229CF372D00B82FB9 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5DD5F1F29CF082000B82FB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5DD5F1929CF081F00B82FB9 = {
+			isa = PBXGroup;
+			children = (
+				F5DD5F2429CF082000B82FB9 /* ClownFinder */,
+				F5DD5F2329CF082000B82FB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5DD5F2329CF082000B82FB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5DD5F2229CF082000B82FB9 /* ClownFinder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5DD5F2429CF082000B82FB9 /* ClownFinder */ = {
+			isa = PBXGroup;
+			children = (
+				F5DD5F4B29CF2C4100B82FB9 /* Utilities */,
+				F5DD5F3C29CF0B9F00B82FB9 /* Model */,
+				F5DD5F3B29CF0AEF00B82FB9 /* Views */,
+				F5DD5F3329CF08A600B82FB9 /* Screens */,
+				F5DD5F2529CF082000B82FB9 /* ClownFinderApp.swift */,
+				F5DD5F2929CF082000B82FB9 /* Assets.xcassets */,
+				F5DD5F2B29CF082000B82FB9 /* Preview Content */,
+			);
+			path = ClownFinder;
+			sourceTree = "<group>";
+		};
+		F5DD5F2B29CF082000B82FB9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F5DD5F2C29CF082000B82FB9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F5DD5F3329CF08A600B82FB9 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F5DD5F4829CF279F00B82FB9 /* ClownService.swift */,
+				F5DD5F3F29CF155400B82FB9 /* ClownGridView */,
+				F5DD5F3A29CF0A1600B82FB9 /* ClownDetailView */,
+				F5DD5F3529CF08CA00B82FB9 /* ClownListView */,
+				F5DD5F3429CF08BF00B82FB9 /* MapView */,
+				F5DD5F2729CF082000B82FB9 /* ClownFinderTabView.swift */,
+				F5DD5F4229CF1C2C00B82FB9 /* ClownFinderTabViewModel.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F5DD5F3429CF08BF00B82FB9 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				F5DD5F3829CF08FF00B82FB9 /* MapView.swift */,
+				F5117FEA29CF5A070024B3F2 /* MapAnnotationView.swift */,
+				F51DB69629D06A3400756508 /* MapViewModel.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		F5DD5F3529CF08CA00B82FB9 /* ClownListView */ = {
+			isa = PBXGroup;
+			children = (
+				F5DD5F3629CF08EC00B82FB9 /* ClownListView.swift */,
+			);
+			path = ClownListView;
+			sourceTree = "<group>";
+		};
+		F5DD5F3A29CF0A1600B82FB9 /* ClownDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				F5DD5F4429CF207500B82FB9 /* ClownDetailView.swift */,
+			);
+			path = ClownDetailView;
+			sourceTree = "<group>";
+		};
+		F5DD5F3B29CF0AEF00B82FB9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F5DD5F5229CF372D00B82FB9 /* LoadingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F5DD5F3C29CF0B9F00B82FB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5DD5F3D29CF0BB500B82FB9 /* Clown.swift */,
+				F51DB69429D0502F00756508 /* Clowns.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5DD5F3F29CF155400B82FB9 /* ClownGridView */ = {
+			isa = PBXGroup;
+			children = (
+				F5DD5F4029CF156400B82FB9 /* ClownGridView.swift */,
+				F51DB69229D04BD300756508 /* ClownGridViewModel.swift */,
+			);
+			path = ClownGridView;
+			sourceTree = "<group>";
+		};
+		F5DD5F4B29CF2C4100B82FB9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F5DD5F4F29CF2D2F00B82FB9 /* Alert */,
+				F5DD5F4C29CF2C4900B82FB9 /* Managers */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F5DD5F4C29CF2C4900B82FB9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F5DD5F4D29CF2C5500B82FB9 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F5DD5F4F29CF2D2F00B82FB9 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				F5DD5F5029CF2D4800B82FB9 /* APIError.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5DD5F2129CF082000B82FB9 /* ClownFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5DD5F3029CF082000B82FB9 /* Build configuration list for PBXNativeTarget "ClownFinder" */;
+			buildPhases = (
+				F5DD5F1E29CF082000B82FB9 /* Sources */,
+				F5DD5F1F29CF082000B82FB9 /* Frameworks */,
+				F5DD5F2029CF082000B82FB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClownFinder;
+			productName = ClownFinder;
+			productReference = F5DD5F2229CF082000B82FB9 /* ClownFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5DD5F1A29CF081F00B82FB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					F5DD5F2129CF082000B82FB9 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = F5DD5F1D29CF081F00B82FB9 /* Build configuration list for PBXProject "ClownFinder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5DD5F1929CF081F00B82FB9;
+			productRefGroup = F5DD5F2329CF082000B82FB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5DD5F2129CF082000B82FB9 /* ClownFinder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5DD5F2029CF082000B82FB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5DD5F2D29CF082000B82FB9 /* Preview Assets.xcassets in Resources */,
+				F5DD5F2A29CF082000B82FB9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5DD5F1E29CF082000B82FB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5DD5F4329CF1C2C00B82FB9 /* ClownFinderTabViewModel.swift in Sources */,
+				F5DD5F4529CF207500B82FB9 /* ClownDetailView.swift in Sources */,
+				F5DD5F4129CF156400B82FB9 /* ClownGridView.swift in Sources */,
+				F5DD5F4E29CF2C5500B82FB9 /* NetworkManager.swift in Sources */,
+				F51DB69529D0502F00756508 /* Clowns.swift in Sources */,
+				F5DD5F5129CF2D4800B82FB9 /* APIError.swift in Sources */,
+				F5DD5F5329CF372D00B82FB9 /* LoadingView.swift in Sources */,
+				F51DB69729D06A3400756508 /* MapViewModel.swift in Sources */,
+				F5DD5F3E29CF0BB500B82FB9 /* Clown.swift in Sources */,
+				F5DD5F3729CF08EC00B82FB9 /* ClownListView.swift in Sources */,
+				F51DB69329D04BD300756508 /* ClownGridViewModel.swift in Sources */,
+				F5DD5F3929CF08FF00B82FB9 /* MapView.swift in Sources */,
+				F5DD5F2829CF082000B82FB9 /* ClownFinderTabView.swift in Sources */,
+				F5DD5F4929CF279F00B82FB9 /* ClownService.swift in Sources */,
+				F5DD5F2629CF082000B82FB9 /* ClownFinderApp.swift in Sources */,
+				F5117FEB29CF5A070024B3F2 /* MapAnnotationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F5DD5F2E29CF082000B82FB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5DD5F2F29CF082000B82FB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5DD5F3129CF082000B82FB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ClownFinder/Preview Content\"";
+				DEVELOPMENT_TEAM = 5929E696DY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.manuelsava.ClownFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5DD5F3229CF082000B82FB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ClownFinder/Preview Content\"";
+				DEVELOPMENT_TEAM = 5929E696DY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.manuelsava.ClownFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5DD5F1D29CF081F00B82FB9 /* Build configuration list for PBXProject "ClownFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5DD5F2E29CF082000B82FB9 /* Debug */,
+				F5DD5F2F29CF082000B82FB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5DD5F3029CF082000B82FB9 /* Build configuration list for PBXNativeTarget "ClownFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5DD5F3129CF082000B82FB9 /* Debug */,
+				F5DD5F3229CF082000B82FB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5DD5F1A29CF081F00B82FB9 /* Project object */;
+}

@@ -1,0 +1,22 @@
+{
+    "clowns":[
+        {
+            "id": 1,
+            "name": "Manu",
+            "shortDescription": "L'inventore di sta clownata",
+            "extendedDescription": "L'inventore di sta clownata L'inventore di sta clownata L'inventore di sta clownata L'inventore di sta clownata L'inventore di sta clownata L'inventore di sta clownata L'inventore di sta clownata v L'inventore di sta clownata",
+            "xPosition": 45.60678,
+            "yPosition": 9.23146,
+            "imageName": "manu"
+        },
+        {
+            "id": 2,
+            "name": "Manu",
+            "shortDescription": "L'inventore di sta clownata",
+            "extendedDescription": "L'inventore di sta clownata L'inventore di sta clownata L'inventore di sta clownata L'inventore di sta clownata L'inventore di sta clownata L'inventore di sta clownata L'inventore di sta clownata v L'inventore di sta clownata",
+            "xPosition": 45.60678,
+            "yPosition": 9.23146,
+            "imageName": "manu"
+        }
+    ]
+}
