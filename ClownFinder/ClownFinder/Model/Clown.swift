@@ -68,7 +68,7 @@ struct localClowns {
         Clown.init(            id: 4,
                                name: "Ricky",
                                shortDescription: "Mi hanno fermato gli sbirri",
-                               extendedDescription: "Non ha un ginocchio ma è comunque capace di correre e fare la leg extension. Va a Vedano per assistere alla retrocessione della sua squadra nel campinato del CIM. Leggenda degli animatori",
+                               extendedDescription: "Non ha un ginocchio ma è comunque capace di correre e fare la leg extension. Va a Vedano per assistere alla retrocessione della sua squadra nel campionato del CIM. Leggenda degli animatori",
                                latitude: 45.60624,
                                longitude: 9.22908,
                                imageName: "ricky",
