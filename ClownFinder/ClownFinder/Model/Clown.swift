@@ -25,7 +25,15 @@ struct Clown: Codable, Identifiable {
 
 struct MockClown: Identifiable {
     let id = 1
-    static let manuClown = Clown(id: 1, name: "Manu", shortDescription: "Manu è un giga clown", extendedDescription: "Manu è il clown dei clown estremo", latitude: 2.2, longitude: 3.3, imageName: "manu", instagram: "https://instagram.com/21savam?igshid=YmMyMTA2M2Y=")
+    static let manuClown =         Clown.init(            id: 1,
+                                                          name: "Manu",
+                                                          shortDescription: "L'inventore di sta clownata",
+                                                          extendedDescription: "Non ha letteralmente un cazzo da fare e quindi si inventa ste stronzate. Gymcoach dei Gymbro Ricky e Fede, gran mangiatore di panini bislunghi nei giorni di sgarro. Finito sto meme andrà a suicidarsi o si inventerà di peggio",
+                                                          latitude: 45.60678,
+                                                          longitude: 9.23146,
+                                                          imageName: "manu",
+                                                          instagram: "https://instagram.com/21savam?igshid=YmMyMTA2M2Y="
+    )
 }
 
 struct localClowns {
@@ -42,7 +50,7 @@ struct localClowns {
         Clown.init(            id: 2,
                                name: "Lillo",
                                shortDescription: "Portami a Monza ti do tutto quello che vuoi",
-                               extendedDescription: "Gli piacarebbe andare a Monza ma come si denota dalla mappa è bloccato tra Desio e Lissone. Fondatore di una startup che non è ancora stata fondata. Fossi in te lo seguirei ",
+                               extendedDescription: "Gli piacerebbe andare a Monza ma come si denota dalla mappa è bloccato tra Desio e Lissone. Fondatore di una startup che non è ancora stata fondata. Fossi in te lo seguirei ",
                                latitude: 45.62024,
                                longitude: 9.23211,
                                imageName: "lillo",

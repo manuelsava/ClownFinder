@@ -26,9 +26,9 @@ struct ClownListView: View {
                 .toolbar(content: {
                     ToolbarItem(placement: .navigationBarTrailing, content: {
                         Button() {
-                            isListView = !isListView
+                            clowns.items.shuffle()
                         } label: {
-                            Image(systemName: "list.bullet")
+                            Image(systemName: "shuffle")
                         }
                     })
                 })

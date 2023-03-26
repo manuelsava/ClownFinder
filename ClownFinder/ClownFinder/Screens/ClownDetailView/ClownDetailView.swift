@@ -23,6 +23,7 @@ struct ClownDetailView: View {
                     .padding(.top, 30)
                 
                 Divider()
+                    .frame(width: 100)
                     .padding(.top)
                     .padding(.bottom)
                 
@@ -30,6 +31,8 @@ struct ClownDetailView: View {
                     .font(.body)
                     .multilineTextAlignment(.center)
                     .lineLimit(5)
+                    .padding(.leading)
+                    .padding(.trailing)
                 
                 Spacer()
                 
@@ -53,7 +56,7 @@ struct ClownDetailView: View {
                         Button {
                             isShowingDetailView = false
                         } label: {
-                            Text("Dismiss")
+                            Text("Chiudi")
                         }
                     }
                 }
