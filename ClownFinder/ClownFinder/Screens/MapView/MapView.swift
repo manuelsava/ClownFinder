@@ -10,8 +10,8 @@ import MapKit
 
 struct MapView: View {
 
+    @EnvironmentObject var clownService: ClownService
     @StateObject var viewModel = MapViewModel()
-    @EnvironmentObject var clowns: Clowns
     @State var selectedClown: Clown? = nil
     
     @State private var region: MKCoordinateRegion = {
@@ -23,19 +23,33 @@ struct MapView: View {
     }()
     
     var body: some View {
-        Map(coordinateRegion: $region, annotationItems: clowns.items) { clown in
-            MapAnnotation(coordinate: clown.coordinate) {
-                MapAnnotationView(clown: clown)
-                    .onTapGesture {
-                        viewModel.isShowingDetailView = true
-                        selectedClown = clown
-                    }
+        ZStack {
+            Map(coordinateRegion: $region, annotationItems: clownService.clowns.items) { clown in
+                MapAnnotation(coordinate: clown.coordinate) {
+                    MapAnnotationView(clown: clown)
+                        .onTapGesture {
+                            viewModel.isShowingDetailView = true
+                            selectedClown = clown
+                        }
+                }
             }
-        }
-        .edgesIgnoringSafeArea(.all)
-        
-        .sheet(isPresented: $viewModel.isShowingDetailView) {
-            ClownDetailView(isShowingDetailView: $viewModel.isShowingDetailView, clown: selectedClown!)
+            .edgesIgnoringSafeArea(.all)
+            
+            .sheet(isPresented: $viewModel.isShowingDetailView) {
+                ClownDetailView(isShowingDetailView: $viewModel.isShowingDetailView, clown: selectedClown!)
+            }
+        }.onAppear {
+            if(clownService.selectedClown != nil) {
+                let clownRegion: MKCoordinateRegion = {
+                    var mapCoordinate = CLLocationCoordinate2D(latitude: clownService.selectedClown!.latitude, longitude: clownService.selectedClown!.longitude)
+                    var mapZoomLevel = MKCoordinateSpan(latitudeDelta: 0.0035, longitudeDelta: 0.0035)
+                    var mapRegion = MKCoordinateRegion(center: mapCoordinate, span: mapZoomLevel)
+                    
+                    return mapRegion
+                }()
+                
+                region = clownRegion
+            }
         }
     }
 }

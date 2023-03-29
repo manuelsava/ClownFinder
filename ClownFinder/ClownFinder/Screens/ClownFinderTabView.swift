@@ -9,25 +9,32 @@ import SwiftUI
 
 struct ClownFinderTabView: View {
     
+    @StateObject var navigationManager = NavigationManager()
     @StateObject var clownService = ClownService()
     @StateObject var viewModel = ClownTabViewModel()
-    @State var selectedTab: Int = 0
     
     var body: some View {
         ZStack {
-            TabView(selection: $selectedTab) {
-                ClownListView(isListView: $viewModel.isListView).environmentObject(clownService.clowns)
+            TabView(selection: $navigationManager.selectedTab) {
+                ClownListView(isListView: $viewModel.isListView)
+                    .environmentObject(clownService.clowns)
+                    .environmentObject(clownService)
+                    .environmentObject(navigationManager)
                     .tabItem {
                         Label("Clowns", systemImage: "person.crop.square")
                     }
                     .tag(0)
                 
-                MapView().environmentObject(clownService.clowns)
+                MapView()
+                    .environmentObject(clownService.clowns)
+                    .environmentObject(clownService)
+                    .environmentObject(navigationManager)
                     .tabItem {
                         Label("Find", systemImage: "map")
                     }
                     .tag(1)
             }
+            
             if clownService.isLoading {
                 LoadingView()
             }

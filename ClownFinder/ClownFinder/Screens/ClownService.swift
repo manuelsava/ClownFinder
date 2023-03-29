@@ -8,7 +8,7 @@
 import SwiftUI
 
 @MainActor final class ClownService: ObservableObject {
-    
+
     @Published var clowns = Clowns()
     @Published var selectedClown: Clown? = nil
     @Published var isLoading: Bool = false
