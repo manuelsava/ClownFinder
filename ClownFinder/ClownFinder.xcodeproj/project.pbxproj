@@ -11,6 +11,7 @@
 		F51DB69329D04BD300756508 /* ClownGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51DB69229D04BD300756508 /* ClownGridViewModel.swift */; };
 		F51DB69529D0502F00756508 /* Clowns.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51DB69429D0502F00756508 /* Clowns.swift */; };
 		F51DB69729D06A3400756508 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51DB69629D06A3400756508 /* MapViewModel.swift */; };
+		F5D0073729D4CA8200299D1B /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D0073629D4CA8200299D1B /* NavigationManager.swift */; };
 		F5DD5F2629CF082000B82FB9 /* ClownFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DD5F2529CF082000B82FB9 /* ClownFinderApp.swift */; };
 		F5DD5F2829CF082000B82FB9 /* ClownFinderTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DD5F2729CF082000B82FB9 /* ClownFinderTabView.swift */; };
 		F5DD5F2A29CF082000B82FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5DD5F2929CF082000B82FB9 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		F51DB69229D04BD300756508 /* ClownGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClownGridViewModel.swift; sourceTree = "<group>"; };
 		F51DB69429D0502F00756508 /* Clowns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clowns.swift; sourceTree = "<group>"; };
 		F51DB69629D06A3400756508 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		F5D0073629D4CA8200299D1B /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 		F5DD5F2229CF082000B82FB9 /* ClownFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClownFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5DD5F2529CF082000B82FB9 /* ClownFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClownFinderApp.swift; sourceTree = "<group>"; };
 		F5DD5F2729CF082000B82FB9 /* ClownFinderTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClownFinderTabView.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				F5DD5F4D29CF2C5500B82FB9 /* NetworkManager.swift */,
+				F5D0073629D4CA8200299D1B /* NavigationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				F5DD5F3E29CF0BB500B82FB9 /* Clown.swift in Sources */,
 				F5DD5F3729CF08EC00B82FB9 /* ClownListView.swift in Sources */,
 				F51DB69329D04BD300756508 /* ClownGridViewModel.swift in Sources */,
+				F5D0073729D4CA8200299D1B /* NavigationManager.swift in Sources */,
 				F5DD5F3929CF08FF00B82FB9 /* MapView.swift in Sources */,
 				F5DD5F2829CF082000B82FB9 /* ClownFinderTabView.swift in Sources */,
 				F5DD5F4929CF279F00B82FB9 /* ClownService.swift in Sources */,

@@ -10,6 +10,10 @@ import SwiftUI
 struct ClownDetailView: View {
     
     @Binding var isShowingDetailView: Bool
+    @EnvironmentObject var navigationManager: NavigationManager
+    @EnvironmentObject var clownService: ClownService
+    @Environment(\.presentationMode) var presentationMode
+    
     let clown: Clown
     
     var body: some View {
@@ -38,7 +42,10 @@ struct ClownDetailView: View {
                 
                 if !isShowingDetailView {
                     Button {
-                        print("hello")
+                        //map
+                        //self.presentationMode.wrappedValue.dismiss()
+                        clownService.selectedClown = clown
+                        navigationManager.selectedTab = 1
                     } label: {
                         ActionButton(label: "Trova sulla mappa")
                     }
