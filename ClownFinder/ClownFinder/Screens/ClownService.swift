@@ -32,4 +32,8 @@ import SwiftUI
             }
         }
     }
+    
+    func shuffleItems() {
+        clowns.items.shuffle()
+    }
 }

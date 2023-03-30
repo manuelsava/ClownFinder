@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ClownListView: View {
     
+    @EnvironmentObject var clowns: Clowns
     @EnvironmentObject var clownService: ClownService
     @Binding var isListView: Bool
     
@@ -16,7 +17,7 @@ struct ClownListView: View {
         ZStack {
             NavigationStack{
                 List {
-                    ForEach(clownService.clowns.items) { clown in
+                    ForEach(clowns.items) { clown in
                         NavigationLink(destination: ClownDetailView(isShowingDetailView: .constant(false), clown: clown)) {
                             ClownListItemView(clown: clown)
                         }
@@ -26,7 +27,7 @@ struct ClownListView: View {
                 .toolbar(content: {
                     ToolbarItem(placement: .navigationBarTrailing, content: {
                         Button() {
-                            clownService.clowns.items.shuffle()
+                            clowns.items.shuffle()
                         } label: {
                             Image(systemName: "shuffle")
                         }
