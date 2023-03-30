@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ClownDetailView: View {
     
+    @Environment(\.openURL) var openURL
     @Binding var isShowingDetailView: Bool
     @EnvironmentObject var navigationManager: NavigationManager
     @EnvironmentObject var clownService: ClownService
@@ -48,6 +49,15 @@ struct ClownDetailView: View {
                         navigationManager.selectedTab = 1
                     } label: {
                         ActionButton(label: "Trova sulla mappa")
+                    }
+                    .buttonStyle(.bordered)
+                    .tint(.accentColor)
+                    .padding(.bottom)
+                } else {
+                    Button {
+                        openURL(URL(string: "http://www.google.com/maps/place/\(clownService.selectedClown!.latitude),\(clownService.selectedClown!.longitude)")!)
+                    } label: {
+                        ActionButton(label: "Naviga")
                     }
                     .buttonStyle(.bordered)
                     .tint(.accentColor)
