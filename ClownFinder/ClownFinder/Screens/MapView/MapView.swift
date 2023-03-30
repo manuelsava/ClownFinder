@@ -41,9 +41,9 @@ struct MapView: View {
         }.onAppear {
             if(clownService.selectedClown != nil) {
                 let clownRegion: MKCoordinateRegion = {
-                    var mapCoordinate = CLLocationCoordinate2D(latitude: clownService.selectedClown!.latitude, longitude: clownService.selectedClown!.longitude)
-                    var mapZoomLevel = MKCoordinateSpan(latitudeDelta: 0.0035, longitudeDelta: 0.0035)
-                    var mapRegion = MKCoordinateRegion(center: mapCoordinate, span: mapZoomLevel)
+                    let mapCoordinate = CLLocationCoordinate2D(latitude: clownService.selectedClown!.latitude, longitude: clownService.selectedClown!.longitude)
+                    let mapZoomLevel = MKCoordinateSpan(latitudeDelta: 0.0035, longitudeDelta: 0.0035)
+                    let mapRegion = MKCoordinateRegion(center: mapCoordinate, span: mapZoomLevel)
                     
                     return mapRegion
                 }()
@@ -60,6 +60,6 @@ struct MapView_Previews: PreviewProvider {
         clownService.clowns.items = localClowns().clowns
         
         return MapView()
-            .environmentObject(clownService.clowns)
+            .environmentObject(clownService)
     }
 }

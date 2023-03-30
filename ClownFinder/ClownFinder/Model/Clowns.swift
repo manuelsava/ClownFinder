@@ -7,10 +7,6 @@
 
 import SwiftUI
 
-class Clowns: ObservableObject {
-    @Published var items = [Clown]()
-    
-    init() {
-        items = []
-    }
+struct Clowns {
+    var items: [Clown] = []
 }

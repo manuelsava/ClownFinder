@@ -5,11 +5,10 @@
 //  Created by Manuel Savà on 25/03/23.
 //
 
-import SwiftUI
+/*import SwiftUI
 
 struct ClownGridView: View {
 
-    @EnvironmentObject var clowns: Clowns
     @Binding var isListView: Bool
     @State var selectedClown: Clown? = nil
     
@@ -74,4 +73,4 @@ struct ClownTitleView: View {
                 .foregroundColor(.gray)
         }
     }
-}
+}*/

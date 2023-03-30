@@ -17,7 +17,6 @@ struct ClownFinderTabView: View {
         ZStack {
             TabView(selection: $navigationManager.selectedTab) {
                 ClownListView(isListView: $viewModel.isListView)
-                    .environmentObject(clownService.clowns)
                     .environmentObject(clownService)
                     .environmentObject(navigationManager)
                     .tabItem {
@@ -26,7 +25,6 @@ struct ClownFinderTabView: View {
                     .tag(0)
                 
                 MapView()
-                    .environmentObject(clownService.clowns)
                     .environmentObject(clownService)
                     .environmentObject(navigationManager)
                     .tabItem {
