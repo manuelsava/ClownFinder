@@ -29,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F501B90C29D62EBE007C369C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F5117FEA29CF5A070024B3F2 /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
 		F51DB69229D04BD300756508 /* ClownGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClownGridViewModel.swift; sourceTree = "<group>"; };
 		F51DB69429D0502F00756508 /* Clowns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clowns.swift; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		F5DD5F2429CF082000B82FB9 /* ClownFinder */ = {
 			isa = PBXGroup;
 			children = (
+				F501B90C29D62EBE007C369C /* Info.plist */,
 				F5DD5F4B29CF2C4100B82FB9 /* Utilities */,
 				F5DD5F3C29CF0B9F00B82FB9 /* Model */,
 				F5DD5F3B29CF0AEF00B82FB9 /* Views */,
@@ -410,6 +412,7 @@
 				DEVELOPMENT_TEAM = 5929E696DY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClownFinder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -439,6 +442,7 @@
 				DEVELOPMENT_TEAM = 5929E696DY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClownFinder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

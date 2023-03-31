@@ -10,10 +10,10 @@ import SwiftUI
 struct ClownDetailView: View {
     
     @Environment(\.openURL) var openURL
+    @Environment(\.presentationMode) var presentationMode
     @Binding var isShowingDetailView: Bool
     @EnvironmentObject var navigationManager: NavigationManager
     @EnvironmentObject var clownService: ClownService
-    @Environment(\.presentationMode) var presentationMode
     
     let clown: Clown
     
@@ -55,7 +55,7 @@ struct ClownDetailView: View {
                     .padding(.bottom)
                 } else {
                     Button {
-                        openURL(URL(string: "http://www.google.com/maps/place/\(clownService.selectedClown!.latitude),\(clownService.selectedClown!.longitude)")!)
+                        openURL(URL(string: "http://www.google.com/maps/place/\(clown.latitude),\(clown.longitude)")!)
                     } label: {
                         ActionButton(label: "Naviga")
                     }

@@ -28,8 +28,8 @@ struct MapView: View {
                 MapAnnotation(coordinate: clown.coordinate) {
                     MapAnnotationView(clown: clown)
                         .onTapGesture {
-                            viewModel.isShowingDetailView = true
                             selectedClown = clown
+                            viewModel.isShowingDetailView = true
                         }
                 }
             }
