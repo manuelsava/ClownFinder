@@ -31,7 +31,14 @@ struct ClownFinderTabView: View {
                         Label("Find", systemImage: "map")
                     }
                     .tag(1)
+                
+                ClownFavouritesView()
+                    .tabItem {
+                        Label("Favourites", systemImage: "star")
+                    }
+                    .tag(2)
             }
+            .transition(.slide)
             
             if clownService.isLoading {
                 LoadingView()

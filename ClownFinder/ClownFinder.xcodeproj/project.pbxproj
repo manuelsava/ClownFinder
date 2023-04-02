@@ -11,6 +11,11 @@
 		F51DB69329D04BD300756508 /* ClownGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51DB69229D04BD300756508 /* ClownGridViewModel.swift */; };
 		F51DB69529D0502F00756508 /* Clowns.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51DB69429D0502F00756508 /* Clowns.swift */; };
 		F51DB69729D06A3400756508 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51DB69629D06A3400756508 /* MapViewModel.swift */; };
+		F54E8E2329D7733400F2199F /* ClownFavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54E8E2229D7733400F2199F /* ClownFavouritesView.swift */; };
+		F54E8E2529D7734000F2199F /* ClownFavouritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54E8E2429D7734000F2199F /* ClownFavouritesViewModel.swift */; };
+		F5C43A5729D9F9590058EA16 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C43A5629D9F9590058EA16 /* CoreDataManager.swift */; };
+		F5C43A5A29D9FA9C0058EA16 /* Favourites.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5C43A5829D9FA9C0058EA16 /* Favourites.xcdatamodeld */; };
+		F5C43A5C29D9FB5A0058EA16 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C43A5B29D9FB5A0058EA16 /* DataController.swift */; };
 		F5D0073729D4CA8200299D1B /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D0073629D4CA8200299D1B /* NavigationManager.swift */; };
 		F5DD5F2629CF082000B82FB9 /* ClownFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DD5F2529CF082000B82FB9 /* ClownFinderApp.swift */; };
 		F5DD5F2829CF082000B82FB9 /* ClownFinderTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DD5F2729CF082000B82FB9 /* ClownFinderTabView.swift */; };
@@ -34,6 +39,11 @@
 		F51DB69229D04BD300756508 /* ClownGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClownGridViewModel.swift; sourceTree = "<group>"; };
 		F51DB69429D0502F00756508 /* Clowns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clowns.swift; sourceTree = "<group>"; };
 		F51DB69629D06A3400756508 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		F54E8E2229D7733400F2199F /* ClownFavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClownFavouritesView.swift; sourceTree = "<group>"; };
+		F54E8E2429D7734000F2199F /* ClownFavouritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClownFavouritesViewModel.swift; sourceTree = "<group>"; };
+		F5C43A5629D9F9590058EA16 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		F5C43A5929D9FA9C0058EA16 /* Favourites.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Favourites.xcdatamodel; sourceTree = "<group>"; };
+		F5C43A5B29D9FB5A0058EA16 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		F5D0073629D4CA8200299D1B /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 		F5DD5F2229CF082000B82FB9 /* ClownFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClownFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5DD5F2529CF082000B82FB9 /* ClownFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClownFinderApp.swift; sourceTree = "<group>"; };
@@ -63,9 +73,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F54E8E2129D7731D00F2199F /* ClownFavouritesView */ = {
+			isa = PBXGroup;
+			children = (
+				F54E8E2229D7733400F2199F /* ClownFavouritesView.swift */,
+				F54E8E2429D7734000F2199F /* ClownFavouritesViewModel.swift */,
+			);
+			path = ClownFavouritesView;
+			sourceTree = "<group>";
+		};
 		F5DD5F1929CF081F00B82FB9 = {
 			isa = PBXGroup;
 			children = (
+				F5C43A5829D9FA9C0058EA16 /* Favourites.xcdatamodeld */,
 				F5DD5F2429CF082000B82FB9 /* ClownFinder */,
 				F5DD5F2329CF082000B82FB9 /* Products */,
 			);
@@ -105,6 +125,7 @@
 		F5DD5F3329CF08A600B82FB9 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				F54E8E2129D7731D00F2199F /* ClownFavouritesView */,
 				F5DD5F4829CF279F00B82FB9 /* ClownService.swift */,
 				F5DD5F3F29CF155400B82FB9 /* ClownGridView */,
 				F5DD5F3A29CF0A1600B82FB9 /* ClownDetailView */,
@@ -173,6 +194,7 @@
 			children = (
 				F5DD5F4F29CF2D2F00B82FB9 /* Alert */,
 				F5DD5F4C29CF2C4900B82FB9 /* Managers */,
+				F5C43A5B29D9FB5A0058EA16 /* DataController.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -182,6 +204,7 @@
 			children = (
 				F5DD5F4D29CF2C5500B82FB9 /* NetworkManager.swift */,
 				F5D0073629D4CA8200299D1B /* NavigationManager.swift */,
+				F5C43A5629D9F9590058EA16 /* CoreDataManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -268,11 +291,15 @@
 				F5DD5F4529CF207500B82FB9 /* ClownDetailView.swift in Sources */,
 				F5DD5F4129CF156400B82FB9 /* ClownGridView.swift in Sources */,
 				F5DD5F4E29CF2C5500B82FB9 /* NetworkManager.swift in Sources */,
+				F54E8E2329D7733400F2199F /* ClownFavouritesView.swift in Sources */,
+				F5C43A5C29D9FB5A0058EA16 /* DataController.swift in Sources */,
 				F51DB69529D0502F00756508 /* Clowns.swift in Sources */,
 				F5DD5F5129CF2D4800B82FB9 /* APIError.swift in Sources */,
 				F5DD5F5329CF372D00B82FB9 /* LoadingView.swift in Sources */,
 				F51DB69729D06A3400756508 /* MapViewModel.swift in Sources */,
 				F5DD5F3E29CF0BB500B82FB9 /* Clown.swift in Sources */,
+				F5C43A5A29D9FA9C0058EA16 /* Favourites.xcdatamodeld in Sources */,
+				F54E8E2529D7734000F2199F /* ClownFavouritesViewModel.swift in Sources */,
 				F5DD5F3729CF08EC00B82FB9 /* ClownListView.swift in Sources */,
 				F51DB69329D04BD300756508 /* ClownGridViewModel.swift in Sources */,
 				F5D0073729D4CA8200299D1B /* NavigationManager.swift in Sources */,
@@ -280,6 +307,7 @@
 				F5DD5F2829CF082000B82FB9 /* ClownFinderTabView.swift in Sources */,
 				F5DD5F4929CF279F00B82FB9 /* ClownService.swift in Sources */,
 				F5DD5F2629CF082000B82FB9 /* ClownFinderApp.swift in Sources */,
+				F5C43A5729D9F9590058EA16 /* CoreDataManager.swift in Sources */,
 				F5117FEB29CF5A070024B3F2 /* MapAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +511,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F5C43A5829D9FA9C0058EA16 /* Favourites.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F5C43A5929D9FA9C0058EA16 /* Favourites.xcdatamodel */,
+			);
+			currentVersion = F5C43A5929D9FA9C0058EA16 /* Favourites.xcdatamodel */;
+			path = Favourites.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F5DD5F1A29CF081F00B82FB9 /* Project object */;
 }

@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ClownListView: View {
     
+    @Environment(\.managedObjectContext) var manager
+    @FetchRequest(sortDescriptors: []) var favClowns: FetchedResults<FavClown>
+    
     @EnvironmentObject var clownService: ClownService
     @Binding var isListView: Bool
     
@@ -19,6 +22,37 @@ struct ClownListView: View {
                     ForEach(clownService.clowns.items) { clown in
                         NavigationLink(destination: ClownDetailView(isShowingDetailView: .constant(false), clown: clown)) {
                             ClownListItemView(clown: clown)
+                        }
+                        .swipeActions {
+                            let index = favClowns.firstIndex { $0.id == Int16(clown.id) }
+                            if index == nil {
+                                Button {
+                                    let favClown = FavClown(context: manager)
+                                    
+                                    favClown.id = Int16(clown.id)
+                                    favClown.name = clown.name
+                                    favClown.shortDesc = clown.shortDescription
+                                    favClown.imageName = clown.imageName
+                                    
+                                    try? manager.save()
+                                } label: {
+                                    Image(systemName: "star")
+                                        .resizable()
+                                        .scaledToFit()
+                                }
+                                .tint(.green)
+                            } else {
+                                Button {
+                                    manager.delete(favClowns[index!])
+                                    
+                                    try? manager.save()
+                                } label: {
+                                    Image(systemName: "trash")
+                                        .resizable()
+                                        .scaledToFit()
+                                }
+                                .tint(.red)
+                            }
                         }
                     }
                 }

@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct ClownFinderApp: App {
+    
+    @StateObject private var dataController = DataController()
+    
     var body: some Scene {
         WindowGroup {
             ClownFinderTabView()
+                .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }
